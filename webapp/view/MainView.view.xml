@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.training.exercise1tatad.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <VBox id="idVBox" class="sapUiSmallMargin">
+                <f:SimpleForm id="idSimpleForm" editable="true" layout="ResponsiveGridLayout" title="Details" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                    <f:content>
+                        <Label id="idLblFName" text="First Name" />
+                        <Input id="idInptFName" value="" />
+                        <Label id="idLblLName" text="Last Name" />
+                        <Input id="idInptLName" value="" />
+                        <Label id="idLblMOP" text="Mode of Payment" />
+                        <Select id="idSelMOP" forceSelection="false">
+                            <items>
+                                <core:Item id="idItmCOD" text="Cash on Delivery" key="COD"/>
+                                <core:Item id="idItmCC" text="Credit Card" key="CC"/>
+                                <core:Item id="idItmGCash" text="GCash" key="GCASH"/>
+                            </items>
+                        </Select>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+
+    </Page>
+</mvc:View>
